@@ -1,0 +1,131 @@
+/* CSS RESET */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+:root{
+    --navbar-height: 59px;
+}
+#navbar{
+    
+    
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+}
+
+#logo{
+    margin: -37px 34px;
+
+}
+#logo img{
+    height: 76px;
+    margin: 39px 49px;
+
+
+}
+
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#navbar ul li{
+    list-style:none ;
+    font-size: 1.3rem;
+
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+    
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 282px;
+    justify-items: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background: url('../bg1.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 38%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+
+}
+#home h1{
+    font-size: 40px;
+    text-align: center;
+    color: white;
+}
+#home p{
+    text-align: center;
+    color: white;
+    font-size: 1.8rem;
+}
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+}
+.h-secondary{
+    font-size: 1.8rem;
+    padding: 12px;
+}
+.btn{
+    padding: 6px 20px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    color: white;
+    margin: 17px;
+    border: 2px solid white;
+    background-color: brown;
+    cursor: pointer;
+
+}
+.center{
+    text-align: center;
+}
+#h{
+    text-align: center;
+    justify-content: center;
+    font-size: 56px;
+}
+#services{
+    margin: 34px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 24px;
+    margin: -30px 6px;
+    border-radius: 24px;
+    background-color: rgb(237, 237, 241);
+}
+#services .box img{
+    display: block;
+    height: 160px;
+    margin: auto;
+    
+}
